@@ -2,6 +2,8 @@
     background-color:black;
     color: white;
     font-family: 'Poppins', sans-serif;
+    height:24px;
+    width:100%;
 }
 
 #alertDiv span{
