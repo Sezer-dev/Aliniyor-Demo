@@ -105,7 +105,7 @@ footer a{
     max-height:700px;
 }
 #purinaLogo{
-    background-image: url("../images/resimler/Layer\ 4.png");
+    background-image: url("../assets/images/resimler/Layer\ 4.png");
     background-repeat: no-repeat;
     background-position: 35% 10%;
     background-size: 50% 25%;
@@ -119,4 +119,65 @@ footer a{
     right:0;
     height:100%;
     text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+    #logoLogin{
+        display: grid;
+        grid-template-columns: 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #logoFirst{
+        grid-row: 1 / span 2 !important;
+        grid-column: 1 / span 4 !important;
+    }
+
+    #logoSecond{
+        grid-row: 1 / 1 !important;
+        grid-column : 5 / span 12 !important;
+        height:80%;
+        width:100%;
+        border: 1px solid #dddddd;
+        border-radius: 2em;
+    }
+
+    #dropdown{
+        height:100%;
+        border:none;
+    }
+
+    #logoThird{
+        grid-row: 2 / 2 !important;
+        grid-column: 5 / span 12 !important;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 2em;
+        height:80%;
+        width:100%;
+
+    }
+
+    #logoThird div{
+        width:50%;
+        height:100%;
+    }
+
+    #logoThird div div{
+        width:50%;
+    }
+
+    #logoThird div:first-child{
+        display: flex !important;
+        align-content: center !important;
+        justify-content: space-evenly !important;
+    }
+
+    #logoThird div:last-child{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-evenly !important;
+    }
 }
