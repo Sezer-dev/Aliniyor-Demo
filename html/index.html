@@ -26,17 +26,19 @@
 
     <!-- Logo - SearchBar - Login Container -->
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-sm-3">
+        <div id="logoLogin" class="row align-items-center">
+            <div id="logoFirst" class="col-xl-3">
                 <a href="#"><img src="../assets/images/resimler/logo.png" alt="aliniyor.com logo"></a>
             </div>
 
-            <div class="col-md-6">
+            <div id="logoSecond" class="col-xl-6">
+
                 <div id="dropdown" class="dropdown d-flex justify-content-between align-items-center">
                     <button class="btn dropdown-toggle mt-1 mb-1 ml-1 border-right" type="button"
                         id="tumKategorilerDrowdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </button>
+                    
                     <div class="dropdown-menu" aria-labelledby="tumKategorilerDrowdown">
                         <a class="dropdown-item" href="#">Bilgisayar / Elektronik</a>
                         <a class="dropdown-item" href="#">Telefon / Cep Telefonu</a>
@@ -63,6 +65,7 @@
                         <a class="dropdown-item" href="#">Yapı Market / Bahçe </a>
                         <a class="dropdown-item" href="#">Ev Dekorasyonu</a>
                     </div>
+
                     <div class="input-group">
                         <input id="searchInput" type="text" class="form-control border-0 mt-1 mb-1"
                             placeholder="Aradığın ürün, kalite ve markayı bul">
@@ -72,17 +75,17 @@
                 </div>
 
             </div>
-            <div class="col-xl-3 d-flex justify-content-between align-items-center">
-                <div class="d-flex flex-row justify-content-around align-items-center">
+            <div id="logoThird" class="col-xl-3 d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-row justify-content-around align-items-center border-right">
                     <img src="../assets/images/resimler/user.png" alt="login icon">
-                    <ul class="list-unstyled d-flex flex-column justify-content-center m-2 pr-2 border-right">
-                        <li class="text-center"><a class="text-dark" href="#">Giriş Yap</a></li>
-                        <li class="text-center"><a class="text-dark" href="#">Üye Ol</a></li>
+                    <ul class="list-unstyled d-flex flex-column justify-content-center m-2 pr-2">
+                        <li class="text-center text-nowrap"><a class="text-dark" href="#">Giriş Yap</a></li>
+                        <li class="text-center text-nowrap"><a class="text-dark" href="#">Üye Ol</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="text-nowrap">
                     <img src="../assets/images/resimler/basket.png" alt="shopping cart icon">
-                    <a href="#">Alışveriş Sepetim</a>
+                    <a id="cart" href="#">Alışveriş Sepetim</a>
                 </div>
             </div>
         </div>
